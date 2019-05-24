@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=street_craps_v6
+PROJECTNAME=street_craps2.0
 
 # Active Configuration
 DEFAULTCONF=Debug
