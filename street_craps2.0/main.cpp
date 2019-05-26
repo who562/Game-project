@@ -1,14 +1,14 @@
     /* 
-    * File:   main.cpp
+    * File:   project 2
     * Author: Alejandro Bravo
-    * Created on April 15th, 2019, 10:50 AM
+    * Created on May 25, 2019, 10:28 AM
     * Purpose:  project 1
     */
 
     //system libraries
     #include <iostream>//Input/Output Library
     #include <string>  // String Library
-    #include<fstream>  // File IO Library
+    #include <fstream>  // File IO Library
     #include <cstdlib> // Random Number Generator Library
     #include <ctime>   // Time function
     #include <iomanip> // format function
@@ -19,7 +19,8 @@
     //Math/Physics/Conversions/Higher Dimensions - i.e. PI, e, etc...
 
     //Function Prototypes
-
+    void dice(int, int);
+    bool onep ( char & );
     //Execution Begins Here!
 
     int main(int argc, char** argv) {
@@ -31,18 +32,21 @@
     outFile.open("craps.txt");
     inFile.open("craps.txt");
     char ans, ans1; //the option for user to restart the game 
-    char opt; //the option for user at main menu 
+    char opt, opt1; //the option for user at main menu 
     string P1, P2, line; //the names of players
     float bet, total; //the bet for the  game
     int lucky = 7, lucky2 = 11, win, lost; // values 
     const float perCov = 100.0f; // convert decimal to percent
+    int row,column;
     //The main menu of the game
+   dice(row,column);
+   
     cout << "🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟" << endl;
     cout << setw(4) << " 🎲 Welcome to Bravo street craps.🎲" << endl;
     cout << "🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟🌟" << endl;
     cout << "1. Play the Game" << endl;
     cout << "2. Display the Rules and about" << endl;
-
+ 
     cin>>opt; //Gets to choose to show the rules or not
     cout << endl;
     while (opt < '1' || opt > '2') //Input validation. Can only enter 1 or 2.
@@ -52,7 +56,7 @@
         cout << endl;
     }
     cin.ignore(1000, '\n'); //Clears anything after player entered their value
-    switch (opt) { //Menu with the 2 choices
+    switch (opt) { //Menu with the 2 choices        
         case '2': //Displays the rules if 2 is selected
         {
             cout << "--------------------------" << endl;
@@ -82,16 +86,25 @@
         default: //Will always end up here, no breaks before this. This is the actual game part
         {
             // The code for the game
+            cout<<"How many player are playing"<<endl;
+            cin>>opt1;
+            if( onep (opt1)){
+                cout<<endl;
+                cout<<"Enter your Name"<<endl;
+                P1="Dealer";
+                  cin>>P2;     
+            } else {
             cout << "Enter player 1 and players 2 a.k.a the shooter Names" << endl;
             cin>>P1; // the name of player 1
             cin>>P2; // the name of player 2
             cout << "\n"; // add a new line
+            }
             do // start of the loop/restart game
             {
                 cout << "shooter make bet" << endl;
                 cin>>bet; // the money that is being bet
           while(cin.fail()) {
-        cout<< "please enter a interger" <<endl;
+        cout<< "please enter a integer" <<endl;
         cin.clear();
         cin.ignore(256,'\n');
         cin>>bet;
@@ -179,6 +192,42 @@
     inFile.close(); // close the infile
     //Exit stage right or left!
     return 0;
+    } void dice(int row,int column){
+    
+     for (int column = 0; column < 10; ++column)
+    {
+        cout << "*";
     }
+    // now print a carraige return, so we can start printing on the next line
+    cout << "\n";
 
+    // Now we're going to print the sides.
+    // There are 8 rows here.  Each row is a star, followed by
+    // 78 spaces, followed by another star and a carraige return.
+    for (int row = 0; row < 5; ++row)
+    {
+        // print the left "wall"
+        cout << "*";
+        // now print 78 spaces
+  
+        for (int column = 0; column < 8; ++column)
+        {
+            cout << " ";
+        }
+        //print the right wall
+       cout << "*\n";
+    }
+    
+    // Once the loop is done, print the bottom wall the same way we printed the top one.
+    for (int column = 0; column < 10; ++column)
+    {
+        cout << "*";
+    }
+    cout<<endl;
+    }bool onep (char & opt1  ){
+        if (opt1==1) {
+            return true;
+        } else
+            return false;
+    }
 

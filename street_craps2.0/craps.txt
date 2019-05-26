@@ -1,3 +1,0 @@
-
-first roll Dices is: 4 second roll dices is: 3
-the point was: 7
