@@ -1,0 +1,30 @@
+
+first roll Dices is: 5 second roll dices is: 5
+the point was: 10
+
+dice one roll: 6 dice two roll: 6
+the sum of both dices is: 12
+
+dice one roll: 4 dice two roll: 2
+the sum of both dices is: 6
+
+dice one roll: 5 dice two roll: 1
+the sum of both dices is: 6
+
+dice one roll: 6 dice two roll: 5
+the sum of both dices is: 11
+
+dice one roll: 2 dice two roll: 4
+the sum of both dices is: 6
+
+dice one roll: 4 dice two roll: 1
+the sum of both dices is: 5
+
+dice one roll: 3 dice two roll: 5
+the sum of both dices is: 8
+
+dice one roll: 2 dice two roll: 5
+the sum of both dices is: 7
+
+first roll Dices is: 3 second roll dices is: 4
+the point was: 7
