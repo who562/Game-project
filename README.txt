@@ -5,8 +5,8 @@ table. This project implements the game in C++, incorporating key programming co
 arrays, vectors, functions, and file I/O.
 
 Game Rules
-*A player (shooter) challenges an opponent and places a wager.
-*The shooter rolls the dice under the following conditions:
+* A player (shooter) challenges an opponent and places a wager.
+* The shooter rolls the dice under the following conditions:
     o	Win Condition: Rolling a 7 or 11 on the first attempt results in an immediate win.
     o	Lose Condition: Rolling a 2, 3, or 12 on the first attempt results in an immediate loss.
     o	Point System: Any other number becomes the point. The shooter must roll the 
@@ -14,9 +14,9 @@ Game Rules
 *The game continues until one of these conditions is met.
 
 Project Details
-*Total Lines of Code: ~343
-*Number of Variables Used: ~23
-*Key Programming Concepts:
+* Total Lines of Code: ~343
+* Number of Variables Used: ~23
+* Key Programming Concepts:
 o    Conditional statements (if, if-else, switch)
 o	Loops (while, do-while, for)
 o	Functions with pass-by-value and pass-by-reference
@@ -37,10 +37,10 @@ my problem-solving skills, making me more confident in working with structured p
 techniques.
 
 How to Play
-1.Compile and run the program in a C++ environment.
-2.Choose between playing, viewing rules, or analyzing game statistics.
-3.Enter the number of players and place bets accordingly.
-4.Follow the game prompts and track your wins/losses!
+1. Compile and run the program in a C++ environment.
+2. Choose between playing, viewing rules, or analyzing game statistics.
+3. Enter the number of players and place bets accordingly.
+4. Follow the game prompts and track your wins/losses!
 
 
 Future Enhancements
