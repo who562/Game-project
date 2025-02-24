@@ -1,57 +1,68 @@
-**Street Craps 🎲**
+# Street Craps 🎲
 
-**Overview**
+## Overview
 
-Street Craps is a simplified version of traditional casino Craps, designed without a banker or a 
-table. This project implements the game in C++, incorporating key programming concepts such as 
-arrays, vectors, functions, and file I/O.
+Street Craps is a streamlined version of the traditional casino game Craps, designed to be played without a dedicated banker or table. Implemented in C++, this project highlights essential programming concepts such as arrays, vectors, functions, and file I/O, offering both an engaging game and a learning experience.
 
-**Game Rules**
+## Game Rules
 
-* A player (shooter) challenges an opponent and places a wager.
-* The shooter rolls the dice under the following conditions:
-    o	Win Condition: Rolling a 7 or 11 on the first attempt results in an immediate win.
-    o	Lose Condition: Rolling a 2, 3, or 12 on the first attempt results in an immediate loss.
-    o	Point System: Any other number becomes the point. The shooter must roll the 
-        same point before rolling a 7 to win. If a 7 appears first, the shooter loses the bet.
-* The game continues until one of these conditions is met.
+- **Player and Wager:**  
+  A player (the shooter) challenges an opponent by placing a wager.
 
-**Project Details**
+- **Dice Roll Outcomes:**  
+  - **Immediate Win:** Rolling a **7** or **11** on the first roll wins the game instantly.  
+  - **Immediate Loss:** Rolling a **2**, **3**, or **12** on the first roll results in an immediate loss.  
+  - **Point Establishment:** Any other number establishes a "point." The shooter must roll this number again before rolling a **7** to win. If a **7** appears first, the shooter loses the bet.
 
-* Total Lines of Code: ~343
-* Number of Variables Used: ~23
-* Key Programming Concepts:
-o    Conditional statements (if, if-else, switch)
-o	Loops (while, do-while, for)
-o	Functions with pass-by-value and pass-by-reference
-o	Arrays and vectors for data storage and manipulation
-o	File I/O for recording game statistics
+- **Game Continuation:**  
+  The game continues until one of these conditions is met.
 
-**Features**
+## Project Details
 
-✅ User-friendly interface with structured menus
-✅ Bet validation to ensure proper input handling
-✅ Randomized dice rolls using rand() for realistic gameplay
-✅ Statistical tracking of win/loss percentages
-✅ File storage for game logs and dice roll history
+- **Total Lines of Code:** ~343  
+- **Number of Variables Used:** ~23
 
-**Challenges & Learning Outcomes**
+**Key Programming Concepts:**
 
-Developing this project improved my understanding of C++ fundamentals, particularly in using 
-arrays, vectors, functions, and file handling. Debugging and refining the game logic strengthened 
-my problem-solving skills, making me more confident in working with structured programming 
-techniques.
+- **Conditional Statements:**  
+  (if, if-else, switch)
+- **Loops:**  
+  (while, do-while, for)
+- **Functions:**  
+  Both pass-by-value and pass-by-reference implementations
+- **Data Structures:**  
+  Arrays and vectors for storing and manipulating data
+- **File I/O:**  
+  For recording game statistics and logs
 
-**How to Play**
+## Features
 
-1. Compile and run the program in a C++ environment.
-2. Choose between playing, viewing rules, or analyzing game statistics.
-3. Enter the number of players and place bets accordingly.
-4. Follow the game prompts and track your wins/losses!
+- ✅ User-friendly interface with structured menus
+- ✅ Input validation for betting
+- ✅ Realistic dice rolls using `rand()`
+- ✅ Statistical tracking of win/loss percentages
+- ✅ File logging for game history and dice roll records
 
+## Challenges & Learning Outcomes
 
-**Future Enhancements**
+This project significantly deepened my understanding of C++ fundamentals, particularly with arrays, vectors, functions, and file handling. The challenges faced during debugging and game logic refinement greatly enhanced my problem-solving skills and confidence in structured programming techniques.
 
-🔹 Implement a graphical interface using a C++ GUI library.
-🔹 Improve AI-based opponents for single-player mode.
-🔹 Expand betting options for a more dynamic experience.
+## How to Play
+
+1. **Compile and Run:**  
+   Compile the program in your C++ development environment and execute it.
+2. **Main Menu:**  
+   Choose to play, review the game rules, or view game statistics.
+3. **Player Setup:**  
+   Enter the number of players and place your bets accordingly.
+4. **Gameplay:**  
+   Follow the prompts to roll the dice and track your wins and losses.
+
+## Future Enhancements
+
+- 🔹 **Graphical Interface:**  
+  Integrate a GUI using a C++ library.
+- 🔹 **Enhanced AI Opponents:**  
+  Develop smarter AI for a more engaging single-player mode.
+- 🔹 **Expanded Betting Options:**  
+  Introduce additional betting mechanisms for a richer game experience.
