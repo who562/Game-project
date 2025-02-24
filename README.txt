@@ -14,7 +14,7 @@ arrays, vectors, functions, and file I/O.
     o	Lose Condition: Rolling a 2, 3, or 12 on the first attempt results in an immediate loss.
     o	Point System: Any other number becomes the point. The shooter must roll the 
         same point before rolling a 7 to win. If a 7 appears first, the shooter loses the bet.
-*The game continues until one of these conditions is met.
+* The game continues until one of these conditions is met.
 
 **Project Details**
 
